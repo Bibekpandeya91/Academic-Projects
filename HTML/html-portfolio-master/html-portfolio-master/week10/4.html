@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Day</title>
+</head>
+<body>
+  <h2>Show Day</h2>
+  <p>Enter a number to represent the day:</p>
+
+  <!-- Input field for the user to enter a number -->
+  <label for="dayInput">Enter a number (1-7):</label>
+  <input type="number" id="dayInput" placeholder="Enter number here">
+  <button onclick="showDay()">Show Day</button>
+
+  <script>
+    function showDay() {
+      // Get the input value
+      var dayNumber = parseInt(document.getElementById("dayInput").value);
+
+      // Use switch case to determine the day
+      var day;
+      switch (dayNumber) {
+        case 1:
+          day = "Sunday";
+          break;
+        case 2:
+          day = "Monday";
+          break;
+        case 3:
+          day = "Tuesday";
+          break;
+        case 4:
+          day = "Wednesday";
+          break;
+        case 5:
+          day = "Thursday";
+          break;
+        case 6:
+          day = "Friday";
+          break;
+        case 7:
+          day = "Saturday";
+          break;
+        default:
+          day = "Invalid";
+      }
+
+      // Show the day in an alert dialog
+      alert("Day: " + day);
+    }
+  </script>
+</body>
+</html>

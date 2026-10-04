@@ -1,0 +1,144 @@
+/* Basic styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-category {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-price {
+    font-style: italic;
+}
+
+.item-description {
+    color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .main-content {
+        padding: 10px;
+    }
+}
+/* Reset default browser styles */
+body, h2, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Content styles */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Menu Table styles */
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table */
+}
+
+.menu-table th {
+    color: red; /* Change text color to blue */
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+}
+
+.menu-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-price {
+    font-style: italic;
+}
+
+/* Add background color for alternating rows */
+.menu-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .main-content {
+        padding: 10px;
+    }
+}
+body {
+    background-image: url('mountain.jpeg'); /* Replace 'your-background-image.jpg' with the path to your desired background image */
+    background-size: cover;
+    background-position: center;
+}
+footer {
+    background-color: lightcoral;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}

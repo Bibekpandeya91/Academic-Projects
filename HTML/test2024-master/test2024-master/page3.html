@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Contact Form</title>
+    <style>
+        /* CSS styles can be included in the head section */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .contact-form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="password"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .contact-form button {
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <h2>My First Contact Form</h2>
+        Enter your last name:<input type="text" id="last-name" name="last-name">
+
+
+        Enter your first name:<input type="text" id="first-name" name="first-name">
+
+        Enter your email: <input type="email" id="email" name="email">
+
+        Address:<input type="text" id="address" name="address">
+
+        House number:<input type="text" id="house-number" name="house-number">
+
+        Enter password (check):<input type="password" id="password" name="password">
+
+        Enter password: <input type="password" id="confirm-password" name="confirm-password">
+
+        Send me monthly newsletter:<input type="checkbox" id="newsletter" name="newsletter">
+
+        What is your question? <textarea id="question"  name="question"></textarea>
+        
+
+        <button type="submit">Send contact</button>
+    </div>
+</body>
+</html>

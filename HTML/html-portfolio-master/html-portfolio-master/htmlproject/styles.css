@@ -1,0 +1,145 @@
+/* styles.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Banner Styles */
+.banner {
+    background-image: url('banner7.jpg'); /* Replace 'banner.jpg' with your image */
+    background-size: cover;
+    height: 280px;
+    text-align: center;
+    color: #fff;
+    padding-top: 50px; /* Adjust as needed */
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 25px;
+}
+
+.main-content h2 {
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+footer {
+    background-color: lightcoral;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
+/* Dish Styles */
+.dish {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.dish img {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.dish-details {
+    flex: 1; /* Allow the details to take up remaining space */
+}
+
+.dish-details h3 {
+    margin-top: 0; /* Remove default margin */
+}
+
+.dish-details p {
+    margin-top: 0; /* Remove default margin */
+    line-height: 1.5; /* Improve readability */
+}
+
+.special-offers {
+    display: flex;
+    flex-wrap: wrap; /* Allow offers to wrap to next line */
+}
+
+.offer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.offer img {
+    width: 200px; /* Adjust as needed */
+    height: 200px;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.offer-text {
+    flex: 1; /* Allow text to take up remaining space */
+}
+
+.offer-text h3 {
+    margin-top: 0; /* Remove default margin */
+}
+
+.offer-text p {
+    margin-top: 0; /* Remove default margin */
+    line-height: 1.5; /* Improve readability */
+}
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+}
+
+.about-section img {
+    width: 200px; /* Adjust as needed */
+    height: 200px;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}

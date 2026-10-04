@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 15px;
+      text-align: left;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    img {
+      max-width: 100px; /* Set maximum width */
+      max-height: 100px; /* Set maximum height */
+    }
+  </style>
+</head>
+<body>
+  <table id="myTable">
+    <tr>
+      <th>S.N.</th>
+      <th>Name</th>
+      <th>Image</th>
+    </tr>
+  </table>
+
+  <script>
+    // Define the data
+    const data = [
+      {id: 1, name: 'Name 1', image: '5.jpeg'},
+      {id: 2, name: 'Name 2', image: '2.jpg'},
+      {id: 3, name: 'Name 3', image: '1.jpg'},
+      {id: 4, name: 'Name 4', image: '4.jpeg'},
+    ];
+
+    // Get the table body
+    const tableBody = document.getElementById('myTable').getElementsByTagName('tbody')[0];
+
+    // Loop through the data and add each row to the table
+    for (let i = 0; i < data.length; i++) {
+      const row = tableBody.insertRow(-1);
+
+      // Add the S.N. cell
+      const snCell = row.insertCell(0);
+      snCell.innerHTML = data[i].id;
+
+      // Add the Name cell
+      const nameCell = row.insertCell(1);
+      nameCell.innerHTML = data[i].name;
+
+      // Add the Image cell
+      const imageCell = row.insertCell(2);
+      const image = document.createElement('img');
+      image.src = `IMG/${data[i].image}`; // Make sure images are in the 'images' folder
+      image.alt = `IMG for ${data[i].name}`;
+      imageCell.appendChild(image);
+    }
+  </script>
+</body>
+</html>
+

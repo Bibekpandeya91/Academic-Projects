@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Division Checker</title>
+</head>
+<body>
+  <h2>Division Checker</h2>
+  <p>Enter your marks to determine your division:</p>
+  
+  <!-- Input field for the user to enter their marks -->
+  <label for="marksInput">Enter Marks:</label>
+  <input type="number" id="marksInput" placeholder="Enter marks here">
+  <button onclick="checkDivision()">Check Division</button>
+
+  <script>
+    function checkDivision() {
+      // Get the input value
+      var marks = parseFloat(document.getElementById("marksInput").value);
+
+      // Check the conditions using if...else if...else statements
+      if (!isNaN(marks) && marks >= 0 && marks <= 100) {
+        if (marks >= 80 && marks <= 100) {
+          alert("Distinction");
+        } else if (marks >= 60 && marks < 80) {
+          alert("First Division");
+        } else if (marks >= 50 && marks < 60) {
+          alert("Second Division");
+        } else if (marks >= 40 && marks < 50) {
+          alert("Third Division");
+        } else {
+          alert("Fail");
+        }
+      } else {
+        alert("Please enter a valid mark between 0 and 100.");
+      }
+    }
+  </script>
+</body>
+</html>

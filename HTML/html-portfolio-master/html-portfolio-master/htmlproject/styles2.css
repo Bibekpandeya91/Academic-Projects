@@ -1,0 +1,82 @@
+/* Main Content */
+.main-content {
+    max-width: 800px;
+    margin:0%;
+    padding: 20px;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Headings */
+h2, h3 {
+    color: #333;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+    margin-bottom:20px;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    
+}
+
+/* Footer Text */
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+footer {
+    background-color: lightcoral;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
+.team-row {
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    margin-bottom: 20px; /* Adjust spacing between rows */
+}
+
+.team-member {
+    width: calc(100% / 3); /* Each team member takes up one-third of the row */
+    text-align: center; /* Center align text */
+}
+
+.team-member img {
+    width:200px;
+    height:200px;
+    max-width: 100%; /* Ensure images don't exceed their container width */
+}
+
+.team-member p {
+    margin: 10px 0 0; /* Adjust spacing for text */
+}

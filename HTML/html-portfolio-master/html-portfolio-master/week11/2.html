@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<body>
+
+<h1 id="heading" onclick="changeText()">Click here to chnge the text</h1>
+
+<button onclick="displayDateTime()">Display Date and Time</button>
+<p id="dateTime"></p>
+
+<script>
+function changeText() {
+    const heading = document.getElementById('heading');
+    heading.innerHTML = "Hello Hello!";
+}
+
+function displayDateTime() {
+    const now = new Date();
+    const dateTimeString = now.toLocaleString();
+    const dateTimeParagraph = document.getElementById('dateTime');
+    dateTimeParagraph.textContent = "Date and Time: " + dateTimeString;
+}
+</script>
+
+</body>
+</html>
